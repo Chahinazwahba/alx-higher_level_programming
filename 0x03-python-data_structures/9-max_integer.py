@@ -1,11 +1,9 @@
-#!/bin/bash
+#!/usr/bin/python3
 def max_integer(my_list=[]):
-    if len(my_list) == 0:
+    max = -99999999999999
+    if my_list == []:
         return None
-
-    max_value = my_list[0]
-    for num in my_list[1:]:
-        if num > max_value:
-            max_value = num
-
-    return max_value
+    for item in my_list:
+        if item > max:
+            max = item
+    return (max)
